@@ -109,3 +109,36 @@ header {
 .main-ul a:hover {
   color: white;
 }
+/* Recently Played */
+.rec {
+  background-color: cornflowerblue;
+}
+.rec-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.rec-col {
+  width: calc((100% / 6) - 0.5rem);
+  height: 100%;
+  /* Test */
+  border: 1px dotted red;
+}
+.rec-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ----------- */
+/* MEDIA QUERY */
+/* ----------- */
+
+/* Da qui Tablet */
+@media screen and (max-width: 1100) {
+  .rec-columns {
+    flex-wrap: wrap;
+  }
+  .rec-col {
+    width: calc((100% / 4) - 0.5rem);
+  }
+}
