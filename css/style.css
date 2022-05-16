@@ -15,7 +15,7 @@
 }
 main {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh); /*?????*/
   display: flex;
   /* Test */
   background-color: aquamarine;
@@ -40,6 +40,7 @@ a {
 .circle-pic {
   border-radius: 50%;
 }
+
 /* -------------- */
 /* -----HEADER----*/
 /* -------------- */
@@ -159,6 +160,40 @@ header {
   padding-right: 0.5rem;
 } */
 
+/* SIDE BAR */
+.side-columns {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.side-col {
+  padding-bottom: 2rem;
+  /* Test */
+  border: 1px dotted red;
+}
+.side-logo {
+  height: 2.5rem;
+}
+.side-menu-pic {
+  height: 2rem;
+}
+.new-playlist {
+  display: flex;
+  align-items: center;
+}
+.new-playlist-icon i {
+  font-size: 2rem;
+}
+.download-icon {
+  height: 1.5rem;
+}
+.profile-icon {
+  height: 2rem;
+}
+.playlist-col {
+  flex-grow: 3;
+  height: 100%;
+}
 /* ----------- */
 /* MEDIA QUERY */
 /* ----------- */
