@@ -4,3 +4,61 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* COMMON */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.app-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: lightcoral;
+}
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  /* Test */
+  background-color: aquamarine;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  color: white;
+  /* Test */
+  background-color: aqua;
+}
+/* -------------- */
+/* -----HEADER----*/
+/* -------------- */
+header {
+  height: 100px;
+  width: calc(100%-250px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* Test */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -------------- */
+/* -----MAIN----*/
+/* -------------- */
+
+/* Left Nav */
+.left-nav {
+  width: 250px;
+  flex-shrink: 0;
+  overflow-y: hidden;
+  /* Test */
+  background-color: darkcyan;
+}
+
+/* Main Content */
+.main-content {
+  width: calc(100%-250px);
+  overflow-y: auto;
+  padding-top: 100px;
+  /* Test */
+  background-color: bisque;
+}
