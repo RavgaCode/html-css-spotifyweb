@@ -37,6 +37,9 @@ li {
 a {
   text-decoration: none;
 }
+.circle-pic {
+  border-radius: 50%;
+}
 /* -------------- */
 /* -----HEADER----*/
 /* -------------- */
@@ -112,33 +115,70 @@ header {
 /* Recently Played */
 .rec {
   background-color: cornflowerblue;
+  padding-bottom: 2rem;
 }
-.rec-columns {
+.main-columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  height: 100%;
 }
-.rec-col {
+.main-col {
   width: calc((100% / 6) - 0.5rem);
   height: 100%;
+  padding-right: 0.5rem;
   /* Test */
   border: 1px dotted red;
 }
-.rec-card {
+.main-card {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+/* Creato per John Doe */
+.john {
+  background-color: burlywood;
+  padding-bottom: 2rem;
+}
+/* .john .main-columns {
+  justify-content: flex-start;
+  margin-right: -0.5rem;
+}
+.john .main-col {
+  padding-right: 0.5rem;
+} */
+/* Artisti più popolari */
+.artist {
+  background-color: beige;
+  padding-bottom: 2rem;
+}
+/* .artist .main-columns {
+  justify-content: flex-start;
+  margin-right: -0.5rem;
+}
+.artist .main-col {
+  padding-right: 0.5rem;
+} */
 
 /* ----------- */
 /* MEDIA QUERY */
 /* ----------- */
 
 /* Da qui Tablet */
-@media screen and (max-width: 1100) {
-  .rec-columns {
+@media screen and (max-width: 1100px) {
+  .main-columns {
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -0.5rem;
   }
-  .rec-col {
+  .main-col {
     width: calc((100% / 4) - 0.5rem);
+    padding-right: 0.5rem;
+  }
+}
+
+/* Da qui mobile S */
+@media screen and (max-width: 700px) {
+  .main-col {
+    width: calc((100% / 2) - 0.5rem);
   }
 }
