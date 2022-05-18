@@ -168,6 +168,12 @@ header {
 .main-img-container:hover .album-cover {
   display: block;
 }
+.main-content h2,
+h3,
+h4,
+h6 {
+  padding-bottom: 0.3rem;
+}
 /* SIDE BAR */
 .side-nav {
   width: 180px;
