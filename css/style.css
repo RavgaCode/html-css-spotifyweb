@@ -132,7 +132,7 @@ header {
   left: 40px;
 }
 /* Recently Played */
-.rec {
+.main-content section {
   padding-bottom: 2rem;
 }
 .main-columns {
@@ -168,6 +168,9 @@ header {
   background-color: black;
   opacity: 0.5;
 }
+.circle-cover {
+  border-radius: 50%;
+}
 .cover-play-icon {
   position: absolute;
   top: 50%;
@@ -178,14 +181,6 @@ header {
 }
 .main-img-container:hover .album-cover {
   display: block;
-}
-/* Creato per John Doe */
-.john {
-  padding-bottom: 2rem;
-}
-/* Artist */
-.artist {
-  padding-bottom: 2rem;
 }
 /* SIDE BAR */
 .side-container {
